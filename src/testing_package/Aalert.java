@@ -20,7 +20,7 @@ public class Aalert
 	public void Aalert()
 	{
 		driver.get("https://demoqa.com/alerts");
-		driver.findElement(By.xpath("//*[@id=\"alertButton\"].click();"
+		driver.findElement(By.xpath("//*[@id=\"confirmButton\"]")).click();
 		Alert a=driver.switchTo().alert();
 		String alerttext=a.getText();
 		System.out.println(alerttext);
